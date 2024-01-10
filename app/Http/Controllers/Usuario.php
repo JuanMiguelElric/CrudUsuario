@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 
 class Usuario extends Controller
 {
-    public function Cadastro () {
-        //
+    public function cadastro () {
+        echo "cadastro" ;
     }
-    public function Salvar (){
-        //git init
+    public function Salvar (Request $request){
+        dd($request->all());
     }
     //
 }

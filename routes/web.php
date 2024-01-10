@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/cadastro', 'App\Http\Controllers\Usuario@cadastro');
+Route::post('/DadosSalvos', 'App\Http\Controllers\Usuario@Salvar');
+
+
